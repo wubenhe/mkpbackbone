@@ -225,11 +225,7 @@ C.utility.backbone('View.Menu')(C.Backbone.View.extend({
             this.autoHighlights();
         }, this);
     },
-    render: function () { ... }
-    autoHighlights: function() { ... }
-}));
-C.utility.backbone('View.Menu')(C.Backbone.View.extend({
-    ...
+    autoHighlights: function() { ... },
     render: function () {
         $(this.el).html(this.menu());
         var ul = $(this.el).find('ul');
@@ -288,10 +284,7 @@ form : function(){
                 search : {type:'Search'}
             }
         }));
-        ...
-}
-    form : function(){
-        ...
+
         var user = new C.Model.User({
             title: 'Mr',
             name: 'Ben He Wu',
